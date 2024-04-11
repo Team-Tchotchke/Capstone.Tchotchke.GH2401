@@ -10,6 +10,7 @@ app.use(cors());
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 require("dotenv").config()
+
 // Calling Routers
 const apiRouter = require("./API/indexAPI")
 app.use("/tchotchke", apiRouter)
