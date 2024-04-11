@@ -17,8 +17,6 @@ userRouter.get("/", async (req, res, next) => {
   }
 });
 
-userRouter.get("/auth", async ()=>{})
-
 userRouter.post("/register", async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
