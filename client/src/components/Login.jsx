@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const baseUrl = "http://localhost:8080/tchotchke/users";
+const baseUrl = "/tchotchke/users";
 
 function Login({ auth, updateUserId }) {
   const [formData, setFormData] = useState({

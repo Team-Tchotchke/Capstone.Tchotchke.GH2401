@@ -50,7 +50,7 @@ function CategoryDropdown() {
     "Games + Toys",
     "Housewares",
     "Jewelry + Accessories",
-    "Miscellaneous",
+    "Miscellaneous Collectibles",
   ];
   return (
     <Dropdown>
@@ -67,7 +67,7 @@ function CategoryDropdown() {
             <Dropdown.Item
               key={cat}
               value={cat}
-              href={`products?category=${encodeURIComponent(cat)}`}
+              href={`/products?category=${encodeURIComponent(cat)}`}
             >
               {cat}
             </Dropdown.Item>
