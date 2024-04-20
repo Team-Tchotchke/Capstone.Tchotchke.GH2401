@@ -5,7 +5,6 @@ import Stripe from "./Stripe";
 
 export default function Cart({ auth, products }) {
   const [cartItems, setCartItems] = useState([]);
-  const [orders, setOrders] = useState([]);
 
   useEffect(() => {
     async function getUserProducts() {
@@ -28,10 +27,10 @@ export default function Cart({ auth, products }) {
     }
   }, [cartItems]);
 
-  const productArray = cartItems.products || [];
-  const orderArray = cartItems.orders || [];
-  const priceArray = productArray.map((products) => products.price);
-  const cartTotal = priceArray.reduce((total, price) => total + price, 0);
+  const cartTotal = cartItems.reduce(
+    (total, item) => total + item.products.price,
+    0
+  );
 
   return (
     <>
@@ -42,24 +41,19 @@ export default function Cart({ auth, products }) {
             {cartItems.length === 0 ? (
               <p className="col"> Your cart is empty. </p>
             ) : (
-              productArray.map((product) => {
-                const orderId =
-                  orderArray &&
-                  orderArray
-                    .filter((order) => order.productsId === product.id)
-                    .map((order) => order.id);
+              cartItems.map(({ id, products }) => {
                 return (
-                  <div key={product.orderId} className="col">
+                  <div key={id} className="col">
                     <img
                       className="card-img-top img-fluid product-image rounded border"
                       style={{ objectFit: "cover" }}
-                      src={product.imgURL}
-                      alt={product.name}
+                      src={products.imgURL}
+                      alt={products.name}
                     ></img>
-                    <h5>{product.name}</h5>
-                    <h5>${product.price}</h5>
+                    <h5>{products.name}</h5>
+                    <h5>${products.price}</h5>
                     <RemoveItemFromCart
-                      orderId={orderId[0]}
+                      orderId={id}
                       setCartItem={setCartItems}
                       cartItems={cartItems}
                     />
@@ -72,8 +66,7 @@ export default function Cart({ auth, products }) {
           <div className="price-total">
             <h4>Cart Total: ${cartTotal}</h4>
             <button className="StripeCheckout">
-              {" "}
-              <Stripe />{" "}
+              <Stripe />
             </button>
           </div>
         </div>
