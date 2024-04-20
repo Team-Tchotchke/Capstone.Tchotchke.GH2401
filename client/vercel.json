@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/tchotchke/:match*",
+      "destination": "https://server-delta-liard.vercel.app/tchotchke/:match*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

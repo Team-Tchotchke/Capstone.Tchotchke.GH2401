@@ -8,7 +8,7 @@ function Products() {
 
   useEffect(() => {
     async function getProducts(category) {
-      const baseUrl = "http://localhost:8080/tchotchke";
+      const baseUrl = "/tchotchke";
       try {
         const query = category
           ? `category=${encodeURIComponent(category)}`
@@ -34,7 +34,10 @@ function Products() {
 
   return (
     <>
-      <div className="all-items-container" style={{ backgroundColor: 'lightblue', padding: '20px'}}>
+      <div
+        className="all-items-container"
+        style={{ backgroundColor: "lightblue", padding: "20px" }}
+      >
         <h2>{category ? decodeURIComponent(category) : "All Items"}</h2>
 
         {products.length === 0 && <p>No inventory</p>}

@@ -8,10 +8,7 @@ productRouter.get("/", async (req, res, next) => {
     const clause = req.query.category
       ? {
           where: {
-            category_name: decodeURIComponent(req.query.category).replace(
-              " + ",
-              "-"
-            ),
+            category_name: decodeURIComponent(req.query.category),
           },
         }
       : {};

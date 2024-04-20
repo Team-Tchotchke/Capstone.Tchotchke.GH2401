@@ -11,7 +11,7 @@ export default function RemoveItemFromCart({
   console.log(orderId, "orders");
   const [errorMessage, setErrorMessage] = useState();
 
-  const baseUrl = "http://localhost:8080/tchotchke/orders";
+  const baseUrl = "/tchotchke/orders";
   const handleRemoveItem = async (e) => {
     e.preventDefault();
     try {

@@ -10,7 +10,7 @@ export default function Cart({ auth, products }) {
 
   useEffect(() => {
     async function getUserProducts() {
-      const baseUrl = "http://localhost:8080/tchotchke";
+      const baseUrl = "/tchotchke";
       try {
         const cartAuth = !auth.id ? JSON.parse(auth) : auth;
         // console.log(cartAuth.id);
@@ -33,21 +33,17 @@ export default function Cart({ auth, products }) {
     }
   }, [cartItems]);
 
-  
-
   // console.log("cartItems.products", cartItems.products);
   // console.log("cartItems.orders", cartItems.orders);
-  
-  const productArray = cartItems.products || []
-  const orderArray = cartItems.orders || []
 
-  console.log(productArray)
+  const productArray = cartItems.products || [];
+  const orderArray = cartItems.orders || [];
+
+  console.log(productArray);
 
   const priceArray = productArray.map((products) => products.price);
-  console.log("price Array:", priceArray)
+  console.log("price Array:", priceArray);
   const cartTotal = priceArray.reduce((total, price) => total + price, 0);
-
- 
 
   return (
     <>
@@ -66,7 +62,11 @@ export default function Cart({ auth, products }) {
             console.log(orderId);
             return (
               <div key={product.orderId} className="product">
-                <img height="100px" src={product.imgURL} alt={product.name}></img>
+                <img
+                  height="100px"
+                  src={product.imgURL}
+                  alt={product.name}
+                ></img>
                 <h5>{product.name}</h5>
                 <h5>${product.price}</h5>
                 <RemoveItemFromCart
@@ -78,11 +78,11 @@ export default function Cart({ auth, products }) {
             );
           })
         )}
-        </div>
-        <br/>
-        <div className="price-total">
-          <h4>Cart Total: ${cartTotal}</h4>
-        </div>
+      </div>
+      <br />
+      <div className="price-total">
+        <h4>Cart Total: ${cartTotal}</h4>
+      </div>
     </>
   );
 }

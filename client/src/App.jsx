@@ -31,7 +31,7 @@ function App() {
     }
 
     async function getProducts() {
-      const baseUrl = "http://localhost:8080/tchotchke";
+      const baseUrl = "/tchotchke";
       try {
         const response = await fetch(`${baseUrl}/products`);
         if (!response.ok) {
@@ -89,7 +89,6 @@ function App() {
         <br />
         <br />
         <br />
-        
 
         {/* { auth.token ? <button>Welcome {auth.name}</button> : <Login login = { login } />} */}
 

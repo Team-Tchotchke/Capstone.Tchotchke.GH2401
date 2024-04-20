@@ -3,17 +3,14 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import CategoryDropdown from "./CategoryDropdown";
+import Logo from "../assets/fleurdetchotchke-nobg.png";
 
 export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-0 d-flex flex-wrap">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
-          <img
-            src="../assets/fleurdetchotchke-nobg.png"
-            alt="Tchotchke Home"
-            height="150px"
-          />
+          <img src={Logo} alt="Tchotchke Home" height="150px" />
         </Link>
         <button
           className="navbar-toggler"
@@ -26,9 +23,12 @@ export default function NavBar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="navbarCollapse"
+        >
           <ul className="navbar-nav me-auto mb-2 mt-4 mb-lg-0">
-          <li className="nav-item">
+            <li className="nav-item">
               <Link to="/" className="nav-link">
                 Home <i className="fa-solid fa-house"></i>
               </Link>
