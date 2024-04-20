@@ -5,7 +5,12 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import CategoryDropdown from "./CategoryDropdown";
 import Logo from "../assets/fleurdetchotchke-nobg.png";
 
-export default function NavBar() {
+export default function NavBar({ auth }) {
+  const handleLogout = (token) => {
+    localStorage.removeItem("auth");
+    setSuccessMessage("You're logged out!");
+  };
+
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-0 d-flex flex-wrap">
       <div className="container-fluid">
@@ -42,12 +47,15 @@ export default function NavBar() {
               <CategoryDropdown />
               <span className="fas fa-search"></span> Search
             </li>
-            {/* Add more navigation links here */}
           </ul>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link to="/login" className="nav-link">
-                Login <i className="fa-solid fa-user"></i>
+              <Link
+                to={auth.id ? "/" : "/login"}
+                className="nav-link"
+                onClick={auth.id ? handleLogout : null}
+              >
+                {auth.id ? `Logout ${auth.name}` : "Login"}
               </Link>
             </li>
             <li className="nav-item">

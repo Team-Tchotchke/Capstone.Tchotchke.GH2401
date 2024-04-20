@@ -5,8 +5,6 @@ import { useState } from "react";
 
 const baseUrl = "/tchotchke";
 
-// const [cartItems, setCartItems] = useState();
-
 function ViewDetails({ products, user }) {
   const [successMessage, setSuccessMessage] = useState();
   const [errorMessage, setErrorMessage] = useState();

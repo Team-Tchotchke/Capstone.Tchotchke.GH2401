@@ -36,24 +36,21 @@ function Login({ auth, updateUserId }) {
         setSuccessMessage("You're logged in!");
         setFormData({ email: formData.email, password: "" });
         const token = user.token;
-        console.log(token);
         auth(user);
         localStorage.setItem("auth", JSON.stringify(user));
         updateUserId(userId);
-        console.log("userId:", userId, "sourced from Login.jsx");
       } else {
         const errorData = await response.json();
-        setErrorMessage(errorData.message || "Login failed. Please try again.");
+        // setErrorMessage(errorData.message || "Login failed. Please try again.");
       }
     } catch (error) {
-      console.error("Error:", error);
-      setErrorMessage("Login failed. Check your username or password.");
+      // console.error("Error:", error);
+      // setErrorMessage("Login failed. Check your username or password.");
     }
   };
 
   const Logout = (token) => {
     localStorage.removeItem("auth");
-    console.log(token);
     setSuccessMessage("You're logged out!");
   };
 
@@ -62,6 +59,7 @@ function Login({ auth, updateUserId }) {
       <h3 className="text-center text-uppercase">Login</h3>
       <form className="form mx-auto" onSubmit={handleSubmit}>
         <div className="mb-3">
+          {" "}
           <label for="email" className="form-label">
             Email:
           </label>
@@ -78,7 +76,6 @@ function Login({ auth, updateUserId }) {
 
         <div className="mb-3">
           {" "}
-          {/* Add margin-bottom for spacing */}
           <label for="password" className="form-label">
             Password:
           </label>

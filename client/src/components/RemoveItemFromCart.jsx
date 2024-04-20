@@ -8,7 +8,6 @@ export default function RemoveItemFromCart({
   setCartItem,
   cartItems,
 }) {
-  console.log(orderId, "orders");
   const [errorMessage, setErrorMessage] = useState();
 
   const baseUrl = "/tchotchke/orders";
@@ -26,5 +25,5 @@ export default function RemoveItemFromCart({
       setErrorMessage("An error occurred. Please try again later.");
     }
   };
-  return <button onClick={handleRemoveItem}>Remove Item from Cart</button>;
+  return <button onClick={handleRemoveItem} className="btn btn-dark">Remove Item from Cart</button>;
 }
