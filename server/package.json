@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "devStart": "nodemon server",
-    "seed": "node db/seed.js",
+    "seed": "node seed.js",
     "all": "npm run devStart & npm run dev",
     "postinstall": "prisma generate",
     "build": "echo 0",
