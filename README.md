@@ -39,23 +39,24 @@ Ensure you have the following installed:
     ```sh
     cd client && npm install
     ```
-        ```sh
+
+   ```sh
     cd server && npm install
     ```
 
-3. **Start the server in the root directory of the repository:**
+4. **Start the server in the root directory of the repository:**
 
     ```sh
     cd server && npm run start:dev
     ```
 
-4. **Start the Vite server in the client directory:**
+5. **Start the Vite server in the client directory:**
 
     ```sh
     cd client && npm run dev
     ```
 
-5. **Test deployment:**
+6. **Test deployment:**
 
     ```sh
     cd client && npm run build
@@ -63,13 +64,13 @@ Ensure you have the following installed:
 
     Browse to `localhost:3000` (or the port you configured).
 
-6. **Build script for deployment:**
+7. **Build script for deployment:**
 
     ```sh
     npm install && cd client && npm run build
     ```
 
-7. **Start script for deployment:**
+8. **Start script for deployment:**
 
     ```sh
     node server/index.js
