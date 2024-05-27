@@ -2,6 +2,15 @@
 
 ![App Screenshot](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/097c51f5-f3d5-4330-b5a6-d4f6a342346e)
 
+![viewAll](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/70b8a152-bc5d-4dab-adbb-91df42cb85f6)
+
+![selectByCategory](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/60c0fec8-7f12-46bb-993d-ddf478779763)
+
+![login](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/62a18a48-9148-4d12-9005-48d30ccbccb2)
+
+![Stripe](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/8e34fa5b-a463-49b4-bdbe-c40713538dfd)
+
+
 ## Overview
 
 Capstone Project
