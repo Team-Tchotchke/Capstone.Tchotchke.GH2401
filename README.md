@@ -31,13 +31,13 @@ Ensure you have the following installed:
 1. **Create the database:**
 
     ```sh
-    createdb acme_talent_agency_db
+    createdb tchotchke_db
     ```
 
 2. **Install dependencies:**
 
     ```sh
-    npm install && cd client && npm install
+    cd client && npm install
     ```
 
 3. **Start the server in the root directory of the repository:**
