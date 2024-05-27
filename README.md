@@ -5,7 +5,7 @@ A tchotchke (/ˈtʃɒtʃkə/ CHOTCH-kə, /ˈtʃɒtʃkiː/ CHOTCH-kee)is a small 
 
 We've built a fullstack e-commerce application selling tchotchke using the modern PERN stack (React, Node.js, Express, and PostgreSQL)
 
-[View Project Presentation with Functionality Video:](https://www.canva.com/design/DAGDJ9b30_0/65CflTSAX9ohosBPq2b8nA/view?utm_content=DAGDJ9b30_0&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+[View Project Presentation with Functionality Video](https://www.canva.com/design/DAGDJ9b30_0/65CflTSAX9ohosBPq2b8nA/view?utm_content=DAGDJ9b30_0&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## Site Display
 
