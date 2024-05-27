@@ -38,18 +38,19 @@ Ensure you have the following installed:
 
     ```sh
     cd client && npm install
+    cd server && npm install
     ```
 
 3. **Start the server in the root directory of the repository:**
 
     ```sh
-    npm run start:dev
+    cd server && npm run start:dev
     ```
 
 4. **Start the Vite server in the client directory:**
 
     ```sh
-    npm run dev
+    cd client && npm run dev
     ```
 
 5. **Test deployment:**
@@ -77,7 +78,7 @@ Ensure you have the following installed:
 Set the following environment variables for deployment:
 
 - `JWT`: Your JWT secret.
-- `DATABASE_URL`: Your PostgreSQL database URL.
+- `POSTGRES_PRISMA_URL`: Your PostgreSQL database URL with username & password.
 
 ## Built With
 
