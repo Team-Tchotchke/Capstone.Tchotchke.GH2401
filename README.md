@@ -1,5 +1,12 @@
 # Capstone.Tchotchke.GH2401
 
+## Overview
+
+Capstone Project
+[View Canva Design](https://www.canva.com/design/DAGDJ9b30_0/65CflTSAX9ohosBPq2b8nA/view?utm_content=DAGDJ9b30_0&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
+## Site Display
+
 ![App Screenshot](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/097c51f5-f3d5-4330-b5a6-d4f6a342346e)
 
 ![viewAll](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/70b8a152-bc5d-4dab-adbb-91df42cb85f6)
@@ -13,10 +20,6 @@
 
 ![Stripe](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/8e34fa5b-a463-49b4-bdbe-c40713538dfd)
 
-
-## Overview
-
-Capstone Project
 
 ## Links
 
