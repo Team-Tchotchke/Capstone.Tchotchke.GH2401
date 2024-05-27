@@ -1,5 +1,8 @@
 # Capstone.Tchotchke.GH2401
 
+![Screen Shot 2024-05-23 at 2 20 16 PM](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/097c51f5-f3d5-4330-b5a6-d4f6a342346e)
+
+
 Capstone Project
 Link to Trello Board:
 https://trello.com/b/PNUsHDcf/capstone-project
