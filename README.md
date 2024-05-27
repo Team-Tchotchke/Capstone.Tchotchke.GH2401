@@ -1,81 +1,86 @@
 # Capstone.Tchotchke.GH2401
 
-![Screen Shot 2024-05-23 at 2 20 16 PM](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/097c51f5-f3d5-4330-b5a6-d4f6a342346e)
+![App Screenshot](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/097c51f5-f3d5-4330-b5a6-d4f6a342346e)
 
+## Overview
 
 Capstone Project
-Link to Trello Board:
-https://trello.com/b/PNUsHDcf/capstone-project
 
-Link to documentation:
-https://docs.google.com/spreadsheets/d/1tYqxJT_uP_ADT2LviBncoi75aRR_CYzKj5O136JIA7A/edit?usp=drive_web&ouid=104809665772122790445
+## Links
 
-_Scrum Master Lineup:_
+- [Trello Board](https://trello.com/b/PNUsHDcf/capstone-project)
+- [Documentation](https://docs.google.com/spreadsheets/d/1tYqxJT_uP_ADT2LviBncoi75aRR_CYzKj5O136JIA7A/edit?usp=drive_web&ouid=104809665772122790445)
 
-- 3/21 - 3/31: Allison R.
-- 4/1 - 4/7: Katy B.
-- 4/8 - 4/14: Ali H.
-- 4/15 - 4/21: Kira L.
+## Scrum Master Lineup
 
-_Installed: _
+- **3/21 - 3/31:** Allison R.
+- **4/1 - 4/7:** Katy B.
+- **4/8 - 4/14:** Ali H.
+- **4/15 - 4/21:** Kira L.
 
-- Nodemon
-- Vite
-- React
+## Installation
 
-# Setup
+### Prerequisites
 
-- create database
+Ensure you have the following installed:
+- Node.js
+- PostgreSQL
 
-```
-createdb acme_talent_agency_db
-```
+### Steps
 
-- install dependencies
+1. **Create the database:**
 
-```
-npm install && cd client && npm install
-```
+    ```sh
+    createdb acme_talent_agency_db
+    ```
 
-- start server in root directory of repository
+2. **Install dependencies:**
 
-```
-npm run start:dev
-```
+    ```sh
+    npm install && cd client && npm install
+    ```
 
-- start vite server in client directory
+3. **Start the server in the root directory of the repository:**
 
-```
-npm run dev
-```
+    ```sh
+    npm run start:dev
+    ```
 
-- to test deployment
+4. **Start the Vite server in the client directory:**
 
-```
-cd client && npm run build
-```
+    ```sh
+    npm run dev
+    ```
 
-browse to localhost:3000 (or whatever server port you used)
+5. **Test deployment:**
 
-- build script for deploy
+    ```sh
+    cd client && npm run build
+    ```
 
-```
-npm install && cd client && npm run build
+    Browse to `localhost:3000` (or the port you configured).
 
-```
+6. **Build script for deployment:**
 
-- start script for deploy
+    ```sh
+    npm install && cd client && npm run build
+    ```
 
-```
-node server/index.js
+7. **Start script for deployment:**
 
-```
+    ```sh
+    node server/index.js
+    ```
 
-- environment variables for deploy
+### Environment Variables
 
-```
-JWT for jwt secret
-DATABASE_URL for postgres database
-```
+Set the following environment variables for deployment:
 
-- environment variables for deployed site
+- `JWT`: Your JWT secret.
+- `DATABASE_URL`: Your PostgreSQL database URL.
+
+## Built With
+
+- [Nodemon](https://nodemon.io/)
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
