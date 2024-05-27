@@ -1,9 +1,11 @@
 # Capstone.Tchotchke.GH2401
 
 ## Overview
+A tchotchke (/ˈtʃɒtʃkə/ CHOTCH-kə, /ˈtʃɒtʃkiː/ CHOTCH-kee)is a small bric-à-brac or miscellaneous item. The word has long been used by Jewish-Americans and in the regional speech of New York City and elsewhere. It is borrowed from Yiddish and is ultimately Slavic in origin.
 
-Capstone Project
-[View Canva Design](https://www.canva.com/design/DAGDJ9b30_0/65CflTSAX9ohosBPq2b8nA/view?utm_content=DAGDJ9b30_0&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+We've built a fullstack e-commerce application selling tchotchke using the modern PERN stack (React, Node.js, Express, and PostgreSQL)
+
+[View Project Presentation with Functionality Video:](https://www.canva.com/design/DAGDJ9b30_0/65CflTSAX9ohosBPq2b8nA/view?utm_content=DAGDJ9b30_0&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## Site Display
 
