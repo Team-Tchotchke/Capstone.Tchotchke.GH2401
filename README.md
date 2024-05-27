@@ -8,6 +8,9 @@
 
 ![login](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/62a18a48-9148-4d12-9005-48d30ccbccb2)
 
+![cart](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/923ba8e7-a47e-4a4f-9697-0f2879b2d81f)
+
+
 ![Stripe](https://github.com/Team-Tchotchke/Capstone.Tchotchke.GH2401/assets/156130068/8e34fa5b-a463-49b4-bdbe-c40713538dfd)
 
 
