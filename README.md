@@ -38,6 +38,8 @@ Ensure you have the following installed:
 
     ```sh
     cd client && npm install
+    ```
+        ```sh
     cd server && npm install
     ```
 
